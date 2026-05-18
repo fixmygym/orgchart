@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creative Department: Proposed Structure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { background: oklch(0.135 0.012 270); color-scheme: dark; }
+      html { scroll-behavior: smooth; }
+      body { font-feature-settings: "cv11", "ss01", "ss03"; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+      ::selection { background: oklch(0.72 0.105 195 / 0.32); color: oklch(0.97 0.006 95); }
+      a.role-link { text-decoration: none; transition: transform 140ms ease, filter 140ms ease, box-shadow 140ms ease; }
+      a.role-link:hover { transform: translateY(-1px); filter: brightness(1.15); box-shadow: 0 4px 14px rgba(0,0,0,0.35); }
+      a.role-link:focus-visible { outline: 2px solid oklch(0.72 0.105 195); outline-offset: 2px; }
+      @media print {
+        @page { size: A4 landscape; margin: 12mm; }
+        html, body { background: white !important; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
